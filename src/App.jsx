@@ -6,9 +6,6 @@ import Dashboard from './pages/dashboard';
 import Auth from './pages/auth';
 import Link from './pages/link';
 import RedirectLink from './pages/redirect-link';
-// import { Route, Routes } from 'react-router-dom';
-// import Header from './components/ui/header';
-// import Footer from './components/footer';
 import UrlProvider from './context';
 import RequireAuth from "./components/require-auth";
 const router = createBrowserRouter([
@@ -48,19 +45,6 @@ const router = createBrowserRouter([
 ])
 function App() {
   return (
-    // <div className='m-4'>
-    //   <Header />
-    //   <UrlProvider>
-    //     <Routes>
-    //       <Route path="/" element={<LandingPage />} />
-    //       <Route path="/dashboard" element={<Dashboard />} />
-    //       <Route path="/auth" element={<Auth />} />
-    //       <Route path="/link/:id" element={<Link />} />
-    //       <Route path="/:id" element={<RedirectLink />} />
-    //     </Routes>
-    //   </UrlProvider>
-    //   <Footer />
-    // </div>
     <UrlProvider>
       <RouterProvider router={router} />
     </UrlProvider>

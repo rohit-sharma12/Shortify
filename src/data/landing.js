@@ -5,20 +5,20 @@ export const testimonialsData = [
         role: "Student",
         image: "https://randomuser.me/api/portraits/women/75.jpg",
         quote:
-            "Welth has transformed how I manage my business finances. The AI insights have helped me identify cost-saving opportunities I never knew existed.",
+            "As a student, I often need to download research links or online resources. The Shortify app has made it so much easier! It's super fast and helps me keep my links organized. ",
     },
     {
         name: "Michael Chen",
         role: "Freelancer",
         image: "https://randomuser.me/api/portraits/men/75.jpg",
         quote:
-            "The receipt scanning feature saves me hours each month. Now I can focus on my work instead of manual data entry and expense tracking.",
+            "The Shortify app has become an essential tool in my workflow. It saves time, makes my links look professional, and gives me valuable insights on how my links are performing. It's a simple tool that boosts my productivity every day!",
     },
     {
         name: "Emily Rodriguez",
         role: "Youtuber",
         image: "https://randomuser.me/api/portraits/women/74.jpg",
         quote:
-            "I recommend Welth to all my clients. The multi-currency support and detailed analytics make it perfect for international investors.",
+            "As a content creator, I hve to save lots of links, whether it's for affiliate marketing or video descriptions. This URL Shortify app has been a game-changer. It helps me track clicks, customize links for branding, and most importantly, keeps everything neat and tidy."
     },
 ];

@@ -1,12 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 //import { Image } from "lucide-react"
-import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-} from "@/components/ui/accordion"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { testimonialsData } from "@/data/landing"
 import { Card, CardContent } from "@/components/ui/card"
 import { useState } from "react"
@@ -64,7 +59,7 @@ const LandingPage = () => {
             <Accordion type="multiple" collapsible className="w-full md:px-12">
                 <AccordionItem value="item-1">
                     <AccordionTrigger>
-                        How does the Trimrr URL shortener works?
+                        How does the Shortify URL shortener works?
                     </AccordionTrigger>
                     <AccordionContent>
                         When you enter a long URL, our system generates a shorter version of

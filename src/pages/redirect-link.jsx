@@ -1,12 +1,13 @@
-import { getLongUrl, storeClicks } from "@/db/apiUrls";
+import { getLongUrl } from "@/db/apiUrls";
+import { storeClicks } from "@/db/apiClicks";
 import useFetch from "@/hooks/use-fetch";
 import { useEffect } from "react";
+
 import { useParams } from "react-router-dom";
 import { BarLoader } from "react-spinners";
 
 const RedirectLink = () => {
     const { id } = useParams();
-
     const { loading, data, fn } = useFetch(getLongUrl, id);
 
     const { loading: loadingStats, fn: fnStats } = useFetch(storeClicks, {
@@ -33,7 +34,6 @@ const RedirectLink = () => {
             </>
         );
     }
-
     return null;
 }
 

@@ -105,7 +105,7 @@ const CreateLink = () => {
                 <Input id="longUrl" placeholder="Enter your Long URL" value={formValues.longUrl} onChange={handleChange} />
                 {errors.longUrl && <Error message={errors.longUrl} />}
                 <div className="flex items-center gap-2">
-                    <Card className="p-2">Short.in</Card> /
+                    <Card className="p-2">Shorten.in</Card> /
                     <Input id="customUrl" placeholder="Custom Link (Optional)" value={formValues.customUrl} onChange={handleChange} />
                 </div>
 

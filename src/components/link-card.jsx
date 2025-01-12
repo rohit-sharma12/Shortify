@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
 import { Button } from "./ui/button"
-import { Copy, Trash, Download, Delete } from "lucide-react"
+import { Copy, Trash, Download } from "lucide-react"
 import { BarLoader } from "react-spinners";
 import useFetch from "@/hooks/use-fetch";
 import { deleteUrl } from "@/db/apiUrls";
 
-const LinkCard = ({ url, fetchUrls }) => {
+const LinkCard = ({ url = [], fetchUrls }) => {
 
     const downloadImage = () => {
         const imageUrl = url?.qr;
@@ -35,8 +35,8 @@ const LinkCard = ({ url, fetchUrls }) => {
             </Link>
 
             <div className="flex gap-2">
-                <Button variant="destructive" onClick={() => navigate.clipboard.writeText(`https://short.in/${url?.short_url}`)}><Copy /></Button>
-                <Button variant="destructive"><Download /></Button>
+                <Button variant="destructive" onClick={() => navigator.clipboard.writeText(`https://short.in/${url?.short_url}`)}><Copy /></Button>
+                <Button variant="destructive" onClick={downloadImage}><Download /></Button>
                 <Button variant="destructive" onClick={() => fnDelete().then(() => fetchUrls())}>{loadingDelete ? <BarLoader size={5} color="white" /> : <Trash />}</Button>
             </div>
         </div>
